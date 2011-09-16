@@ -1,0 +1,16 @@
+import sys, string, os, arcgisscripting, time, shutil, wx
+
+try:
+    del gp
+except:
+    pass
+
+gp = arcgisscripting.create()
+gp.OverwriteOutput = True
+gp.SetProduct("ArcInfo")
+gp.CheckOutExtension("spatial")
+gp.AddToolbox("C:/Program Files/ArcGIS/ArcToolbox/Toolboxes/Spatial Analyst Tools.tbx")
+gp.AddToolbox("C:/Program Files/ArcGIS/ArcToolbox/Toolboxes/Conversion Tools.tbx")
+gp.AddToolbox("C:/Program Files/ArcGIS/ArcToolbox/Toolboxes/Data Management Tools.tbx")
+gp.AddToolbox("C:/Program Files/ArcGIS/ArcToolbox/Toolboxes/Analysis Tools.tbx")
+   

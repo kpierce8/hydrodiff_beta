@@ -10,6 +10,7 @@ gp.AddToolbox("C:/Program Files/ArcGIS/ArcToolbox/Toolboxes/Analysis Tools.tbx")
 
 allTest = re.compile(r'^all$', re.IGNORECASE)
 
+#a new comment
 
 def checkBuffers(newrun):
     wria = newrun.WRIAs[0]
